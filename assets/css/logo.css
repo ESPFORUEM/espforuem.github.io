@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
+
+#logo{
+    text-align: center;
+    margin-top: 3rem;
+}
+
+#logo img{
+    width: 35%;
+    height: 35%;
+    border-radius: 1rem;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.navbar{
+  border-bottom: 1px solid #ddd;
+  background: rgb(247,247,247);
+  background: linear-gradient(180deg, rgba(247,247,247,1) 0%, rgba(191,191,191,0.04237669188769255) 100%);  
+}
+
+@media only screen and (min-width:993px) {
+  .right-border{
+      padding: 8px !important;    
+      border-right: 1px solid #ddd;
+      transition: background-color 0.2s;
+      transition-timing-function: linear !important;
+  }
+  .right-border:last-child{ border-right: 0px; }
+}
+
+.right-border:hover{ background-color: #f0f0f0;}
+
+.dropdown-menu{
+  padding:10px
+}
+
+
+@media only screen and  (max-width:991px){
+  .menuLogo{ max-width: 110px; }
+  #menu{ margin-bottom: 40px !important;}
+}
+
+@media only screen and (min-width:992px) {
+
+  .menuLogo{
+    width: 240px !important;
+    padding: 16px;
+    position: absolute;
+    left: 50%;
+    margin-left: -460px;
+    top: -10px;
+    border: 1px solid #ddd;
+    border-top: 0;
+    background: rgb(247,247,247);
+    background: linear-gradient(180deg, rgba(247,247,247,1) 20%, rgba(227,227,227,1) 100%);
+    border-radius: 0  0 10px 10px ;
+  }
+
+  .menuLogo:hover{
+    background: rgb(247,247,247);
+    background: linear-gradient(90deg, rgba(247,247,247,1) 0%, rgba(227,227,227,1) 100%);
+  }
+
+  #navbarNavAltMarkup{
+    left: 50%;
+    margin-left: calc(-480px + 280px);
+  }
+
+  #menu{
+    margin-bottom: 100px !important;    
+    
+  }
+
+  .navbar-nav{
+    height: 44px !important;
+  }
+
+  .navMenu{
+    position: absolute;
+    top :  0px !important;
+    height: 38px !important;
+    font-size: 10.5pt;
+    color: blue !important    
+  }
+
+  .navMenu a{
+    color: #000 !important;
+    font-weight: 600;
+    font-family: 'Nunito';
+  }
+  
+  
+}

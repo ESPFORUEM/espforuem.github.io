@@ -1,0 +1,44 @@
+@import url('logo.css');
+
+body *{
+    font-family: 'Ubuntu', Helvetica, sans-serif;
+}
+
+.banner{
+    width: 100%;
+    height: 300px;
+    background-color: #000;
+    left: 0;
+    margin-top:-80px;
+    background-image: url('../images/codeground.jpg');
+    background-position: center center;
+    background-attachment:scroll;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.7;
+}
+
+.justify-content-center{
+    padding: 8px;
+}
+
+.page_title{
+    background: -webkit-linear-gradient(#019444, #2581C2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#organizers img{
+    width: 4rem;
+    height: 4rem;
+
+    margin: 1rem 1rem 1rem 0;
+    border-radius: 1.5rem;
+}
+
+.text-justify{
+  text-align: justify;
+}
+.decorative_image{
+    width: 280px;
+}
