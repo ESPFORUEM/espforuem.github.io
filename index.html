@@ -7,7 +7,7 @@
     <meta http-equiv="Expires" content="0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EspForUem - Especialização em Forense Digital</title>
+    <title>EspForUem - Especialização EAD em em Forense Digital</title>
 
     <link rel="shortcut icon" href="assets/images/icon.png" type="image/x-icon">
 
@@ -33,6 +33,42 @@
 
 </head>
 <body>
+
+
+<!-- let's call the following div as the POPUP FRAME -->
+<div id="popup">
+
+    <!-- and here comes the image -->
+    <img src="http://i.imgur.com/cVJrCHU.jpg" alt="popup">
+
+        <!-- Now this is the button which closes the popup-->
+        <button id="close">Close button</button>
+
+        <!-- and finally we close the POPUP FRAME-->
+        <!-- everything on it will show up within the popup so you can add more things not just an image -->
+</div>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<script>
+//your jquery script here
+//with this first line we're saying: "when the page loads (document is ready) run the following script"
+$(document).ready(function () {
+
+//select the POPUP FRAME and show it
+$("#popup").hide().fadeIn(1000);
+
+//close the POPUP if the button with id="close" is clicked
+$("#close").on("click", function (e) {
+    e.preventDefault();
+    $("#popup").fadeOut(1000);
+});
+
+});
+</script>
+
+
+
     
 <!-- MENU -->
 
