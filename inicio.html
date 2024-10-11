@@ -1,9 +1,8 @@
 <head>
 
     
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Image Popup Example</title>
+        <!-- <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">    
         <style>
             body {
                 font-family: Arial, sans-serif;
@@ -12,10 +11,102 @@
         <script>
             window.onload = function() {
                 // Open a new popup window with an image
-                window.open('popup-image.html', 'ImagePopup', 'width=600,height=400');
+                window.open('popup.html', 'ImagePopup', 'width=600,height=400');
             }
         </script>
-    
+     -->
+
+     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* Styling for the popup image in parent window */
+        #popupImage {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            width: 300px; /* You can adjust the size */
+            height: auto;
+            border: 2px solid #ccc;
+            padding: 10px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            z-index: 1000; /* Ensures the popup is above other content */
+        }
+
+        #popupImage img {
+            max-width: 50%;
+            height: auto;
+        }
+
+        /* Close button for the popup */
+        #closePopup {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            background-color: red;
+            color: white;
+            border: none;
+            padding: 2px 5px;
+        }
+    </style>
+    <script>
+        window.onload = function() {
+            // Create popup in the parent window when index page is loaded
+            let popup = window.open('', 'parentPopup', 'width=400,height=400');
+            popup.document.body.innerHTML = `
+                <div id="popupImage">
+                    <button id="closePopup" onclick="window.close()">X</button>
+                    <img src="./fotos/espforuem-divulgação.png" alt="Popup Image">
+                </div>
+            `;
+            
+            // Add CSS styles to position the popup
+            let style = popup.document.createElement('style');
+            style.innerHTML = `
+                body {
+                    margin: 0;
+                    padding: 0;
+                }
+
+                #popupImage {
+                    position: fixed;
+                    top: 20px;
+                    right: 20px;
+                    width: 300px;
+                    height: auto;
+                    border: 2px solid #ccc;
+                    padding: 10px;
+                    background-color: white;
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                    z-index: 1000;
+                }
+
+                #popupImage img {
+                    max-width: 100%;
+                    height: auto;
+                }
+
+                #closePopup {
+                    position: absolute;
+                    top: 5px;
+                    right: 5px;
+                    cursor: pointer;
+                    font-size: 16px;
+                    background-color: red;
+                    color: white;
+                    border: none;
+                    padding: 2px 5px;
+                }
+            `;
+            popup.document.head.appendChild(style);
+        };
+    </script>
 
 </head>
 
