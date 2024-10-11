@@ -35,39 +35,7 @@
 <body>
 
 
-<!-- let's call the following div as the POPUP FRAME -->
-<!-- <div id="popup" > -->
 
-    <!-- and here comes the image -->
-    <img src="./fotos/espforuem-divulgação.png" alt="popup" float="right" width="50%" height="50%">
-
-        <!-- Now this is the button which closes the popup-->
-        <button id="close">Fechar</button>
-
-        <!-- and finally we close the POPUP FRAME-->
-        <!-- everything on it will show up within the popup so you can add more things not just an image -->
-<!-- </div> -->
-
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-
-<script>
-//your jquery script here
-//with this first line we're saying: "when the page loads (document is ready) run the following script"
-$(document).ready(function () {
-
-//select the POPUP FRAME and show it
-$("#popup").hide().fadeIn(1000);
-
-//close the POPUP if the button with id="close" is clicked
-$("#close").on("click", function (e) {
-    e.preventDefault();
-    $("#popup").fadeOut(1000);
-});
-
-});
-
-
-</script>
 
 
 
@@ -114,6 +82,40 @@ $("#close").on("click", function (e) {
     loadPage();
 
     
+
+</script>
+
+<!-- let's call the following div as the POPUP FRAME -->
+<div id="popup" >
+
+    <!-- and here comes the image -->
+    <img src="./fotos/espforuem-divulgação.png" alt="popup" float="right" width="10%" height="10%">
+
+        <!-- Now this is the button which closes the popup-->
+        <button id="close">Fechar</button>
+
+        <!-- and finally we close the POPUP FRAME-->
+        <!-- everything on it will show up within the popup so you can add more things not just an image -->
+</div>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<script>
+//your jquery script here
+//with this first line we're saying: "when the page loads (document is ready) run the following script"
+$(document).ready(function () {
+
+//select the POPUP FRAME and show it
+$("#popup").hide().fadeIn(1000);
+
+//close the POPUP if the button with id="close" is clicked
+$("#close").on("click", function (e) {
+    e.preventDefault();
+    $("#popup").fadeOut(1000);
+});
+
+});
+
 
 </script>
 
