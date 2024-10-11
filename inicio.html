@@ -2,31 +2,45 @@
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
 
-<div id="popup1" class="overlay">
+<!-- <div id="popup1" class="overlay">
     <div class="popup">            
         <a class="close" href="#">&times;</a>
-        <!-- <img src="./fotos/espforuem-divulgação.png" alt="popup" float="right" width="10%" height="10%"> -->
         <img src="./fotos/espforuem-divulgação.png" alt="popup">
         
     </div>
+</div> -->
+
+<div class="box">
+	<a class="button" href="#popup1">Let me Pop up</a>
+</div>
+
+<div id="popup1" class="overlay">
+	<div class="popup">
+		<h2>Here i am</h2>
+		<a class="close" href="#">&times;</a>
+		<div class="content">
+			<img src="./fotos/espforuem-divulgação.png" alt="popup">
+		</div>
+	</div>
 </div>
 
 
 <script>
 
-    //with this first line we're saying: "when the page loads (document is ready) run the following script"
-    $(document).ready(function () {
+    // $(document).ready(function () {
     
-    //select the POPUP FRAME and show it
-    $("#popup1").hide().fadeIn(1000);
     
-    //close the POPUP if the button with id="close" is clicked
-    $("#close").on("click", function (e) {
-        e.preventDefault();
-        $("#popup1").fadeOut(1000);
-    });
+    // $("#popup1").hide().fadeIn(1000);
     
-    });
+    
+    // $("#close").on("click", function (e) {
+    //     e.preventDefault();
+    //     $("#popup1").fadeOut(1000);
+    // });
+    
+    // });
+
+    
     
 </script>
     
